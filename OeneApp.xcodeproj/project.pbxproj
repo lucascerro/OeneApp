@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD1788D31AEE33F900137774 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1788D21AEE33F900137774 /* AppDelegate.swift */; };
+		FD1788D61AEE33F900137774 /* OeneApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD1788D41AEE33F900137774 /* OeneApp.xcdatamodeld */; };
+		FD1788D81AEE33F900137774 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1788D71AEE33F900137774 /* ViewController.swift */; };
+		FD1788DB1AEE33F900137774 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD1788D91AEE33F900137774 /* Main.storyboard */; };
+		FD1788DD1AEE33F900137774 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD1788DC1AEE33F900137774 /* Images.xcassets */; };
+		FD1788E01AEE33F900137774 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD1788DE1AEE33F900137774 /* LaunchScreen.xib */; };
+		FD1788EC1AEE33F900137774 /* OeneAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1788EB1AEE33F900137774 /* OeneAppTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD1788E61AEE33F900137774 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD1788C51AEE33F900137774 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD1788CC1AEE33F900137774;
+			remoteInfo = OeneApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD1788CD1AEE33F900137774 /* OeneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OeneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD1788D11AEE33F900137774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD1788D21AEE33F900137774 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD1788D51AEE33F900137774 /* OeneApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OeneApp.xcdatamodel; sourceTree = "<group>"; };
+		FD1788D71AEE33F900137774 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD1788DA1AEE33F900137774 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD1788DC1AEE33F900137774 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FD1788DF1AEE33F900137774 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FD1788E51AEE33F900137774 /* OeneAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OeneAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD1788EA1AEE33F900137774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD1788EB1AEE33F900137774 /* OeneAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OeneAppTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD1788CA1AEE33F900137774 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1788E21AEE33F900137774 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD1788C41AEE33F900137774 = {
+			isa = PBXGroup;
+			children = (
+				FD1788CF1AEE33F900137774 /* OeneApp */,
+				FD1788E81AEE33F900137774 /* OeneAppTests */,
+				FD1788CE1AEE33F900137774 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD1788CE1AEE33F900137774 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD1788CD1AEE33F900137774 /* OeneApp.app */,
+				FD1788E51AEE33F900137774 /* OeneAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD1788CF1AEE33F900137774 /* OeneApp */ = {
+			isa = PBXGroup;
+			children = (
+				FD1788D21AEE33F900137774 /* AppDelegate.swift */,
+				FD1788D71AEE33F900137774 /* ViewController.swift */,
+				FD1788D91AEE33F900137774 /* Main.storyboard */,
+				FD1788DC1AEE33F900137774 /* Images.xcassets */,
+				FD1788DE1AEE33F900137774 /* LaunchScreen.xib */,
+				FD1788D41AEE33F900137774 /* OeneApp.xcdatamodeld */,
+				FD1788D01AEE33F900137774 /* Supporting Files */,
+			);
+			path = OeneApp;
+			sourceTree = "<group>";
+		};
+		FD1788D01AEE33F900137774 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD1788D11AEE33F900137774 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD1788E81AEE33F900137774 /* OeneAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD1788EB1AEE33F900137774 /* OeneAppTests.swift */,
+				FD1788E91AEE33F900137774 /* Supporting Files */,
+			);
+			path = OeneAppTests;
+			sourceTree = "<group>";
+		};
+		FD1788E91AEE33F900137774 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD1788EA1AEE33F900137774 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD1788CC1AEE33F900137774 /* OeneApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD1788EF1AEE33F900137774 /* Build configuration list for PBXNativeTarget "OeneApp" */;
+			buildPhases = (
+				FD1788C91AEE33F900137774 /* Sources */,
+				FD1788CA1AEE33F900137774 /* Frameworks */,
+				FD1788CB1AEE33F900137774 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OeneApp;
+			productName = OeneApp;
+			productReference = FD1788CD1AEE33F900137774 /* OeneApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD1788E41AEE33F900137774 /* OeneAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD1788F21AEE33F900137774 /* Build configuration list for PBXNativeTarget "OeneAppTests" */;
+			buildPhases = (
+				FD1788E11AEE33F900137774 /* Sources */,
+				FD1788E21AEE33F900137774 /* Frameworks */,
+				FD1788E31AEE33F900137774 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD1788E71AEE33F900137774 /* PBXTargetDependency */,
+			);
+			name = OeneAppTests;
+			productName = OeneAppTests;
+			productReference = FD1788E51AEE33F900137774 /* OeneAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD1788C51AEE33F900137774 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Coup;
+				TargetAttributes = {
+					FD1788CC1AEE33F900137774 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					FD1788E41AEE33F900137774 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = FD1788CC1AEE33F900137774;
+					};
+				};
+			};
+			buildConfigurationList = FD1788C81AEE33F900137774 /* Build configuration list for PBXProject "OeneApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD1788C41AEE33F900137774;
+			productRefGroup = FD1788CE1AEE33F900137774 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD1788CC1AEE33F900137774 /* OeneApp */,
+				FD1788E41AEE33F900137774 /* OeneAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD1788CB1AEE33F900137774 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD1788DB1AEE33F900137774 /* Main.storyboard in Resources */,
+				FD1788E01AEE33F900137774 /* LaunchScreen.xib in Resources */,
+				FD1788DD1AEE33F900137774 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1788E31AEE33F900137774 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD1788C91AEE33F900137774 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD1788D81AEE33F900137774 /* ViewController.swift in Sources */,
+				FD1788D61AEE33F900137774 /* OeneApp.xcdatamodeld in Sources */,
+				FD1788D31AEE33F900137774 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1788E11AEE33F900137774 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD1788EC1AEE33F900137774 /* OeneAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD1788E71AEE33F900137774 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD1788CC1AEE33F900137774 /* OeneApp */;
+			targetProxy = FD1788E61AEE33F900137774 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD1788D91AEE33F900137774 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD1788DA1AEE33F900137774 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD1788DE1AEE33F900137774 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD1788DF1AEE33F900137774 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD1788ED1AEE33F900137774 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD1788EE1AEE33F900137774 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD1788F01AEE33F900137774 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OeneApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FD1788F11AEE33F900137774 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OeneApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FD1788F31AEE33F900137774 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OeneAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OeneApp.app/OeneApp";
+			};
+			name = Debug;
+		};
+		FD1788F41AEE33F900137774 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OeneAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OeneApp.app/OeneApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD1788C81AEE33F900137774 /* Build configuration list for PBXProject "OeneApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD1788ED1AEE33F900137774 /* Debug */,
+				FD1788EE1AEE33F900137774 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD1788EF1AEE33F900137774 /* Build configuration list for PBXNativeTarget "OeneApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD1788F01AEE33F900137774 /* Debug */,
+				FD1788F11AEE33F900137774 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FD1788F21AEE33F900137774 /* Build configuration list for PBXNativeTarget "OeneAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD1788F31AEE33F900137774 /* Debug */,
+				FD1788F41AEE33F900137774 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FD1788D41AEE33F900137774 /* OeneApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FD1788D51AEE33F900137774 /* OeneApp.xcdatamodel */,
+			);
+			currentVersion = FD1788D51AEE33F900137774 /* OeneApp.xcdatamodel */;
+			path = OeneApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FD1788C51AEE33F900137774 /* Project object */;
+}
