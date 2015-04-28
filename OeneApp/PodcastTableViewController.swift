@@ -11,7 +11,6 @@ import UIKit
 class PodcastTableViewController: UITableViewController, NSXMLParserDelegate {
     //MARK: refresh function
     func refreshPodcasts() {
-//        var entryPodcast = Podcast()
         let urlString = NSURL(string: "http://www.blubrry.com/feeds/onorte.xml")
         let rssUrlRequest:NSURLRequest = NSURLRequest(URL:urlString!)
         let queue:NSOperationQueue = NSOperationQueue()
@@ -21,7 +20,7 @@ class PodcastTableViewController: UITableViewController, NSXMLParserDelegate {
             //3
             self.xmlParser = NSXMLParser(data: data)
             self.xmlParser.delegate = self
-            println("vai chamar o parse!")
+//            println("vai chamar o parse!")
             self.xmlParser.parse()
         }
     }
@@ -54,16 +53,16 @@ class PodcastTableViewController: UITableViewController, NSXMLParserDelegate {
                 attributes attributeDict: [NSObject : AnyObject]){
                     if elementName == "item" {
                         weAreInsideAnItem = true
-                        println("we're inside an item")
-                        println("\(xmlParser.columnNumber)")
+//                        println("we're inside an item")
+//                        println("\(xmlParser.columnNumber)")
 
                     }
                     if weAreInsideAnItem {
                         switch elementName {
                             case "title":
-                                println("inside an item and found a title")
+//                                println("inside an item and found a title")
                                 entryTitle = String()
-                                println("entryTitle = \(entryTitle)")
+//                                println("entryTitle = \(entryTitle)")
                                 currentParsedElement = "title"
             //                case "pubDate":
             //                    entryDate = String()
@@ -79,7 +78,7 @@ class PodcastTableViewController: UITableViewController, NSXMLParserDelegate {
             //                    currentParsedElement = "itunes:subtitle"
                             case "itunes:summary":
                                 entryDescription = String()
-                                println("inside an item and found a description")
+//                                println("inside an item and found a description")
                                 currentParsedElement = "itunes:summary"
                         default: break
                     }
@@ -91,11 +90,11 @@ class PodcastTableViewController: UITableViewController, NSXMLParserDelegate {
                     if weAreInsideAnItem {
                         if currentParsedElement == "title" {
                             entryTitle = entryTitle + string!
-                            println("++++atribuiu title ao string: \(entryTitle)")
+//                            println("++++atribuiu title ao string: \(entryTitle)")
                         }
                         if currentParsedElement == "itunes:summary" {
                             entryDescription = entryDescription + string!
-                            println("++++atribuiu desc ao string: \(entryDescription)")
+//                            println("++++atribuiu desc ao string: \(entryDescription)")
 
                         }
                     }
@@ -110,13 +109,13 @@ class PodcastTableViewController: UITableViewController, NSXMLParserDelegate {
 //                            podcasts.append(entryPodcast)
 //                            podcasts[podcasts.count-1].podcastTitle = entryTitle
                             currentParsedElement = ""
-                            println("====defined entryPodcast title = \(entryTitle)")
+//                            println("====defined entryPodcast title = \(entryTitle)")
                         }
                         if elementName == "itunes:summary" {
 //                            println("\(podcasts.count-1)")
 //                            podcasts[podcasts.count-1].podcastDescription = entryDescription
                             currentParsedElement = ""
-                            println("====defined entryPodcast description = \(entryDescription)")
+//                            println("====defined entryPodcast description = \(entryDescription)")
                         }
                     }
                     if elementName == "item" {
@@ -124,20 +123,20 @@ class PodcastTableViewController: UITableViewController, NSXMLParserDelegate {
                         var entryPodcast = Podcast()
                         entryPodcast.podcastTitle = entryTitle
                         entryPodcast.podcastDescription = entryDescription
-                        println("****appended new podcast to podcasts[]")
+//                        println("****appended new podcast to podcasts[]")
                         podcasts.append(entryPodcast)
-                        println("podcasts.count = \(podcasts.count)")
+//                        println("podcasts.count = \(podcasts.count)")
                     }
             }
     
     //4
     func parserDidEndDocument(parser: NSXMLParser){
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
-            println(podcasts.count)
-            println("title 0 = \(podcasts[0].podcastTitle)")
-            println("description 0 = \(podcasts[0].podcastDescription)")
-            println("title 5 = \(podcasts[5].podcastTitle)")
-            println("description 5 = \(podcasts[5].podcastDescription)")
+//            println(podcasts.count)
+//            println("title 0 = \(podcasts[0].podcastTitle)")
+//            println("description 0 = \(podcasts[0].podcastDescription)")
+//            println("title 5 = \(podcasts[5].podcastTitle)")
+//            println("description 5 = \(podcasts[5].podcastDescription)")
             self.tableView.reloadData()
         })
     }
@@ -147,10 +146,9 @@ class PodcastTableViewController: UITableViewController, NSXMLParserDelegate {
     //MARK: ViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.edgesForExtendedLayout = UIRectEdge.None
-        self.extendedLayoutIncludesOpaqueBars = false
-        self.automaticallyAdjustsScrollViewInsets = false
-        println("viewDidLoad")
+//        self.edgesForExtendedLayout = UIRectEdge.None
+//        self.extendedLayoutIncludesOpaqueBars = false
+//        self.automaticallyAdjustsScrollViewInsets = false
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.estimatedRowHeight = 40.0
         refreshPodcasts()

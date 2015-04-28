@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+class Newsletter: NSObject {
+    //Essential Newsletter object data:
+    var newsletterTitle = String()
+    var newsletterDate = String()
+    var newsletterURL = NSURL()
+    var newsletterDescription = String()
+}
+
+var newsletters = [Newsletter]()
