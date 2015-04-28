@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		FD1788D31AEE33F900137774 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1788D21AEE33F900137774 /* AppDelegate.swift */; };
 		FD1788D61AEE33F900137774 /* OeneApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD1788D41AEE33F900137774 /* OeneApp.xcdatamodeld */; };
-		FD1788D81AEE33F900137774 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1788D71AEE33F900137774 /* ViewController.swift */; };
 		FD1788DB1AEE33F900137774 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD1788D91AEE33F900137774 /* Main.storyboard */; };
 		FD1788DD1AEE33F900137774 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD1788DC1AEE33F900137774 /* Images.xcassets */; };
 		FD1788E01AEE33F900137774 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD1788DE1AEE33F900137774 /* LaunchScreen.xib */; };
 		FD1788EC1AEE33F900137774 /* OeneAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1788EB1AEE33F900137774 /* OeneAppTests.swift */; };
+		FD7E1C591AEF556A00B884EA /* NewsletterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E1C541AEF556A00B884EA /* NewsletterModel.swift */; };
+		FD7E1C5A1AEF556A00B884EA /* NewsletterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E1C551AEF556A00B884EA /* NewsletterTableViewController.swift */; };
+		FD7E1C5B1AEF556A00B884EA /* PodcastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E1C561AEF556A00B884EA /* PodcastModel.swift */; };
+		FD7E1C5C1AEF556A00B884EA /* PodcastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E1C571AEF556A00B884EA /* PodcastTableViewCell.swift */; };
+		FD7E1C5D1AEF556A00B884EA /* PodcastTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E1C581AEF556A00B884EA /* PodcastTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +35,17 @@
 		FD1788D11AEE33F900137774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD1788D21AEE33F900137774 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD1788D51AEE33F900137774 /* OeneApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OeneApp.xcdatamodel; sourceTree = "<group>"; };
-		FD1788D71AEE33F900137774 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FD1788DA1AEE33F900137774 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD1788DC1AEE33F900137774 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FD1788DF1AEE33F900137774 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FD1788E51AEE33F900137774 /* OeneAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OeneAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD1788EA1AEE33F900137774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD1788EB1AEE33F900137774 /* OeneAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OeneAppTests.swift; sourceTree = "<group>"; };
+		FD7E1C541AEF556A00B884EA /* NewsletterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsletterModel.swift; sourceTree = "<group>"; };
+		FD7E1C551AEF556A00B884EA /* NewsletterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsletterTableViewController.swift; sourceTree = "<group>"; };
+		FD7E1C561AEF556A00B884EA /* PodcastModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastModel.swift; sourceTree = "<group>"; };
+		FD7E1C571AEF556A00B884EA /* PodcastTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastTableViewCell.swift; sourceTree = "<group>"; };
+		FD7E1C581AEF556A00B884EA /* PodcastTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +87,12 @@
 		FD1788CF1AEE33F900137774 /* OeneApp */ = {
 			isa = PBXGroup;
 			children = (
-				FD1788D21AEE33F900137774 /* AppDelegate.swift */,
-				FD1788D71AEE33F900137774 /* ViewController.swift */,
 				FD1788D91AEE33F900137774 /* Main.storyboard */,
-				FD1788DC1AEE33F900137774 /* Images.xcassets */,
-				FD1788DE1AEE33F900137774 /* LaunchScreen.xib */,
-				FD1788D41AEE33F900137774 /* OeneApp.xcdatamodeld */,
+				FD7E1C551AEF556A00B884EA /* NewsletterTableViewController.swift */,
+				FD7E1C541AEF556A00B884EA /* NewsletterModel.swift */,
+				FD7E1C581AEF556A00B884EA /* PodcastTableViewController.swift */,
+				FD7E1C571AEF556A00B884EA /* PodcastTableViewCell.swift */,
+				FD7E1C561AEF556A00B884EA /* PodcastModel.swift */,
 				FD1788D01AEE33F900137774 /* Supporting Files */,
 			);
 			path = OeneApp;
@@ -93,6 +101,10 @@
 		FD1788D01AEE33F900137774 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FD1788D21AEE33F900137774 /* AppDelegate.swift */,
+				FD1788DE1AEE33F900137774 /* LaunchScreen.xib */,
+				FD1788D41AEE33F900137774 /* OeneApp.xcdatamodeld */,
+				FD1788DC1AEE33F900137774 /* Images.xcassets */,
 				FD1788D11AEE33F900137774 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -215,9 +227,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD1788D81AEE33F900137774 /* ViewController.swift in Sources */,
+				FD7E1C5D1AEF556A00B884EA /* PodcastTableViewController.swift in Sources */,
 				FD1788D61AEE33F900137774 /* OeneApp.xcdatamodeld in Sources */,
 				FD1788D31AEE33F900137774 /* AppDelegate.swift in Sources */,
+				FD7E1C5A1AEF556A00B884EA /* NewsletterTableViewController.swift in Sources */,
+				FD7E1C591AEF556A00B884EA /* NewsletterModel.swift in Sources */,
+				FD7E1C5C1AEF556A00B884EA /* PodcastTableViewCell.swift in Sources */,
+				FD7E1C5B1AEF556A00B884EA /* PodcastModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +365,7 @@
 				INFOPLIST_FILE = OeneApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -359,6 +376,7 @@
 				INFOPLIST_FILE = OeneApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -415,6 +433,7 @@
 				FD1788F11AEE33F900137774 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD1788F21AEE33F900137774 /* Build configuration list for PBXNativeTarget "OeneAppTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +442,7 @@
 				FD1788F41AEE33F900137774 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
