@@ -19,6 +19,7 @@
 		FD7E1C5C1AEF556A00B884EA /* PodcastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E1C571AEF556A00B884EA /* PodcastTableViewCell.swift */; };
 		FD7E1C5D1AEF556A00B884EA /* PodcastTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E1C581AEF556A00B884EA /* PodcastTableViewController.swift */; };
 		FD7E1C5F1AEFE21100B884EA /* NewsletterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E1C5E1AEFE21100B884EA /* NewsletterTableViewCell.swift */; };
+		FD8C0DD01AF01A66006AF8FE /* NewsletterWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8C0DCF1AF01A66006AF8FE /* NewsletterWebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		FD7E1C571AEF556A00B884EA /* PodcastTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastTableViewCell.swift; sourceTree = "<group>"; };
 		FD7E1C581AEF556A00B884EA /* PodcastTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastTableViewController.swift; sourceTree = "<group>"; };
 		FD7E1C5E1AEFE21100B884EA /* NewsletterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsletterTableViewCell.swift; sourceTree = "<group>"; };
+		FD8C0DCF1AF01A66006AF8FE /* NewsletterWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsletterWebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				FD7E1C5E1AEFE21100B884EA /* NewsletterTableViewCell.swift */,
 				FD7E1C541AEF556A00B884EA /* NewsletterModel.swift */,
 				FD7E1C581AEF556A00B884EA /* PodcastTableViewController.swift */,
+				FD8C0DCF1AF01A66006AF8FE /* NewsletterWebViewController.swift */,
 				FD7E1C571AEF556A00B884EA /* PodcastTableViewCell.swift */,
 				FD7E1C561AEF556A00B884EA /* PodcastModel.swift */,
 				FD1788D01AEE33F900137774 /* Supporting Files */,
@@ -230,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD8C0DD01AF01A66006AF8FE /* NewsletterWebViewController.swift in Sources */,
 				FD7E1C5F1AEFE21100B884EA /* NewsletterTableViewCell.swift in Sources */,
 				FD7E1C5D1AEF556A00B884EA /* PodcastTableViewController.swift in Sources */,
 				FD1788D61AEE33F900137774 /* OeneApp.xcdatamodeld in Sources */,

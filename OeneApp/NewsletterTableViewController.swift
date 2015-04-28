@@ -184,10 +184,23 @@ class NewsletterTableViewController: UITableViewController {
 
         cell.textLabel!.text = newsletters[indexPath.row].newsletterTitle
         cell.detailTextLabel!.text = newsletters[indexPath.row].newsletterDescription
+        cell.targetURL = newsletters[indexPath.row].newsletterURL
         return cell
     }
     
-
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let identifier = segue.identifier {
+            if identifier == "openNewsletter" {
+                if let vc = segue.destinationViewController as? NewsletterWebViewController {
+                    let cellInitiator = sender as! NewsletterTableViewCell
+                    let urlString = cellInitiator.targetURL
+                    let newsletterURLRequest:NSURLRequest = NSURLRequest(URL:urlString)
+                    vc.urlRequest = newsletterURLRequest
+                }
+            }
+        }
+    
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

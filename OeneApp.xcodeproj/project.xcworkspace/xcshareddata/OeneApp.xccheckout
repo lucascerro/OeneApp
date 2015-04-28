@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>300129F1-4B94-46FC-9797-17592693CAAE</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>OeneApp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>5243D295A3BE846CA567F0B4FC954E7AF7385DDB</key>
 		<string>https://github.com/lucascerro/OeneApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>OeneApp.xcodeproj/project.xcworkspace</string>
+	<string>OeneApp.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>5243D295A3BE846CA567F0B4FC954E7AF7385DDB</key>

@@ -9,7 +9,7 @@
 import UIKit
 
 class NewsletterTableViewCell: UITableViewCell {
-
+    var targetURL = NSURL()
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,5 +20,7 @@ class NewsletterTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    
 
 }

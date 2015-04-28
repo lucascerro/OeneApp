@@ -10,7 +10,7 @@
                 <tabBarController modalTransitionStyle="flipHorizontal" id="IRf-Ph-EVy" sceneMemberID="viewController">
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="Zc8-gU-V2G">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -53,6 +53,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="ILF-gg-3hH" kind="show" identifier="openNewsletter" id="t9S-Sc-i3G"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -68,6 +71,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hqc-2U-Jkg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1268" y="-225"/>
+        </scene>
+        <!--Newsletter Web View Controller-->
+        <scene sceneID="NwV-og-ySQ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qh6-2a-H7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="ILF-gg-3hH" customClass="NewsletterWebViewController" customModule="OeneApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wV8-fe-Rz0"/>
+                        <viewControllerLayoutGuide type="bottom" id="ibI-eu-M7E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ys0-pc-6Ql">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" allowsInlineMediaPlayback="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1j-kU-BcP">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k1j-kU-BcP" firstAttribute="bottom" secondItem="ibI-eu-M7E" secondAttribute="top" id="Pvd-04-r9l"/>
+                            <constraint firstItem="k1j-kU-BcP" firstAttribute="top" secondItem="ys0-pc-6Ql" secondAttribute="top" id="TXo-cf-kRf"/>
+                            <constraint firstItem="k1j-kU-BcP" firstAttribute="leading" secondItem="ys0-pc-6Ql" secondAttribute="leading" id="szj-Jn-btF"/>
+                            <constraint firstAttribute="trailing" secondItem="k1j-kU-BcP" secondAttribute="trailing" id="uj8-ca-XT5"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="WebView" destination="k1j-kU-BcP" id="vI3-HK-ZnU"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2046" y="-225"/>
         </scene>
         <!--Podcasts Table View Controller-->
         <scene sceneID="8nD-bt-C5l">
