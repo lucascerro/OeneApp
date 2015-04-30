@@ -92,11 +92,11 @@
 			isa = PBXGroup;
 			children = (
 				FD1788D91AEE33F900137774 /* Main.storyboard */,
+				FD8C0DCF1AF01A66006AF8FE /* NewsletterWebViewController.swift */,
 				FD7E1C551AEF556A00B884EA /* NewsletterTableViewController.swift */,
 				FD7E1C5E1AEFE21100B884EA /* NewsletterTableViewCell.swift */,
 				FD7E1C541AEF556A00B884EA /* NewsletterModel.swift */,
 				FD7E1C581AEF556A00B884EA /* PodcastTableViewController.swift */,
-				FD8C0DCF1AF01A66006AF8FE /* NewsletterWebViewController.swift */,
 				FD7E1C571AEF556A00B884EA /* PodcastTableViewCell.swift */,
 				FD7E1C561AEF556A00B884EA /* PodcastModel.swift */,
 				FD1788D01AEE33F900137774 /* Supporting Files */,
@@ -371,6 +371,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OeneApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -382,6 +383,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OeneApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
